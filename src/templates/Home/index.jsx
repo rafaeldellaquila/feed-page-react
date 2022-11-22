@@ -5,7 +5,7 @@ import './styles.css'
 import Posts from '../../components/Posts'
 import loadPosts from '../../utils/loadPosts'
 import Button from '../../components/Button'
-import SearchBar from '../../components/Searchbar'
+import SearchBar from '../../components/SearchBar'
 
 export const Home = () => {
   const [posts, setPosts] = useState([])

@@ -1,7 +1,7 @@
 import PostCard from '../PostCard'
 import './styles.css'
 
-const Posts = ({ posts }) => {
+const Posts = ({ posts = [] }) => {
   return (
     <div className="posts">
       {posts.map((post) => (
