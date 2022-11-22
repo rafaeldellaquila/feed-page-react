@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<PostCard/> should match snapshot 1`] = `
+<div>
+  <div
+    class="post"
+  >
+    <img
+      alt="sunt aut facere repellat provident"
+      src="https://via.placeholder.com/600/92c952"
+    />
+    <div
+      class="post-content"
+    >
+      <h2>
+        sunt aut facere repellat provident
+      </h2>
+      <p>
+        quia et suscipit suscipit recusandae consequuntur
+      </p>
+    </div>
+  </div>
+</div>
+`;
