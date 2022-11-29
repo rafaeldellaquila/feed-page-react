@@ -1,3 +1,4 @@
+import P from 'prop-types'
 import './styles.css'
 const SearchBar = ({ searchValue, onChange }) => {
   return (
@@ -9,6 +10,11 @@ const SearchBar = ({ searchValue, onChange }) => {
       placeholder="Pesquise aqui..."
     />
   )
+}
+
+SearchBar.propTypes = {
+  searchValue: P.string.isRequired,
+  onChange: P.func.isRequired
 }
 
 export default SearchBar

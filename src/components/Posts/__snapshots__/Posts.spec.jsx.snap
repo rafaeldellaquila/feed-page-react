@@ -7,6 +7,7 @@ exports[`<Post /> match the snapshot 1`] = `
   >
     <div
       class="post"
+      id="0"
     >
       <img
         alt="sunt aut facere repellat provident"
@@ -25,6 +26,7 @@ exports[`<Post /> match the snapshot 1`] = `
     </div>
     <div
       class="post"
+      id="1"
     >
       <img
         alt="sunt aut facere repellat provident"
@@ -43,6 +45,7 @@ exports[`<Post /> match the snapshot 1`] = `
     </div>
     <div
       class="post"
+      id="2"
     >
       <img
         alt="sunt aut facere repellat provident"

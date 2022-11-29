@@ -1,21 +1,21 @@
 import { render, screen } from '@testing-library/react'
 import Posts from '.'
-import { postCardProps } from '../PostCard/mock'
+import postCardMock from '../PostCard/mock'
 
 const props = {
   posts: [
     {
-      ...postCardProps,
+      ...postCardMock
     },
     {
-      ...postCardProps,
-      id: postCardProps.id + 1,
+      ...postCardMock,
+      id: postCardMock.id + 1
     },
     {
-      ...postCardProps,
-      id: postCardProps.id + 2,
-    },
-  ],
+      ...postCardMock,
+      id: postCardMock.id + 2
+    }
+  ]
 }
 
 describe('<Post />', () => {

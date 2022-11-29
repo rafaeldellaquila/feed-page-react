@@ -1,23 +1,19 @@
 import { render, screen } from '@testing-library/react'
 import PostCard from '.'
-import { postCardProps } from './mock'
+import postCardMock from './mock'
 
 describe('<PostCard/>', () => {
   it('should render the PostCard', () => {
-    render(<PostCard {...postCardProps} />)
+    render(<PostCard {...postCardMock} />)
 
-    expect(
-      screen.getByRole('img', { name: postCardProps.title })
-    ).toHaveAttribute('src', postCardProps.cover)
+    expect(screen.getByRole('img', { name: postCardMock.title })).toHaveAttribute('src', postCardMock.cover)
 
-    expect(
-      screen.getByRole('heading', { name: postCardProps.title })
-    ).toBeInTheDocument()
+    expect(screen.getByRole('heading', { name: postCardMock.title })).toBeInTheDocument()
 
-    expect(screen.getByText(postCardProps.body)).toBeInTheDocument()
+    expect(screen.getByText(postCardMock.body)).toBeInTheDocument()
   })
   it('should match snapshot', () => {
-    const { container } = render(<PostCard {...postCardProps} />)
+    const { container } = render(<PostCard {...postCardMock} />)
     expect(container).toMatchSnapshot()
   })
 })

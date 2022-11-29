@@ -4,6 +4,7 @@ exports[`<PostCard/> should match snapshot 1`] = `
 <div>
   <div
     class="post"
+    id="0"
   >
     <img
       alt="sunt aut facere repellat provident"
