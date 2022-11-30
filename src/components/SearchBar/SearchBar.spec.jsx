@@ -10,11 +10,11 @@ describe('<Post />', () => {
   })
 
   it('should call handleChange fn on each key  pressed', () => {
-    render(<SearchBar onChange={fn} />)
+    render(<SearchBar onChange={fn} searchValue={'lorem ipsum'} />)
     const input = screen.getByPlaceholderText(/Pesquise aqui.../i)
 
-    userEvent.type(input, 'value')
-    expect(input.value).toBe('value')
-    expect(fn).toHaveBeenCalledTimes('value'.length)
+    userEvent.type(input, 'lorem ipsum')
+    expect(input.value).toBe('lorem ipsum')
+    expect(fn).toHaveBeenCalledTimes('lorem ipsum'.length)
   })
 })
